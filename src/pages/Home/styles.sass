@@ -1,0 +1,25 @@
+@import "~stylesheets/variables/index.sass"
+
+.hT
+  &__Home
+    width: 100%
+    height: 100%
+    padding: $spacingXHuge
+    position: absolute
+    display: flex
+
+    &__SelectableArea
+      flex: 1.8
+      margin-right: $spacingLarge
+
+    &__TagsList
+      flex: 1
+
+      &__Items
+        position: relative
+        left: -$spacingXLarge
+        width: calc(100% + #{$spacingXLarge * 2})
+        border-top: 1px solid $colorLighterGray
+        margin-top: $spacingLarge
+        padding: $spacingXHuge
+        padding-top: $spacingLarge

@@ -1,0 +1,46 @@
+@import "~stylesheets/variables/index.sass"
+
+.hT
+  &__Tags
+    font-family: $tagFontFamilyStandard
+
+    &__Item
+      display: flex
+      position: relative
+      padding-left: $spacingMedium
+      margin-bottom: $spacingSmall
+      align-items: center
+
+      &:before
+        content: ''
+        background: url('/public/bullets.png')
+        background-size: cover
+        width: $spacingSmall
+        height: $spacingSmall
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+
+      &__Counter
+        position: relative
+        margin-left: $spacingStandard
+        padding-left: $spacingStandard
+        color: $colorGreen
+        font-size: $fontSizeSmall
+
+        &:before
+          content: ''
+          background: $colorGreen
+          width: $spacingSmall
+          height: $spacingSmall
+          position: absolute
+          left: 0
+          top: 50%
+          transform: translateY(-50%)
+          border-radius: 50%
+
+      &__RemoveButton
+        cursor: pointer
+        height: $spacingMedium
+        margin-left: $spacingSmall

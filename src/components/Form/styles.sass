@@ -1,0 +1,29 @@
+@import "~stylesheets/variables/index.sass"
+
+.hT
+  &__Form
+    display: flex
+
+    &__Input,
+    &__Button
+      border: 1px solid $colorLightGray
+      border-radius: $spacingSmall
+      padding: $spacingMedium
+
+    &__Button
+      cursor: pointer
+
+    &__Input
+      flex-grow: 1
+      margin-right: $spacingStandard
+
+      &--invalid
+        border-color: $colorRed
+
+      &::placeholder
+        color: $colorLightGray
+
+    &__Button
+      font-size: $fontSizeLarge
+      color: $colorGray
+      font-weight: $fontWeightBold

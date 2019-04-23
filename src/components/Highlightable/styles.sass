@@ -1,0 +1,35 @@
+@import "~stylesheets/variables/index.sass"
+
+.hT
+  &__Highlightable
+    &__Char
+      &--highlighted
+        background: $colorLightBlue
+        cursor: pointer
+
+    &__Actions
+      position: fixed
+      z-index: 2
+      display: flex
+      align-items: center
+      background: $colorWhite
+      border: 2px solid $colorLighterGray
+      padding: $spacingStandard
+      box-shadow: $boxShadow
+      border-radius: $spacingSmall
+
+      &__TagSelector
+        width: 160px
+
+      &__Button
+        margin-left: $spacingStandard
+        background: $colorGreen
+        cursor: pointer
+        border-radius: 50%
+        width: $spacingLarge
+        height: $spacingLarge
+        display: flex
+        font-size: $fontSizeSmall
+        align-items: center
+        justify-content: center
+        color: $colorWhite
